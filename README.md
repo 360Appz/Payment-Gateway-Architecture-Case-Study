@@ -2,10 +2,10 @@
 
 # Key Statistics (2025):
 
-Global payment orchestration market: $1.41B (projected $14.29B by 2037 at 19.5% CAGR)
-Stripe's total payment volume: $1.4T in 2024
-Digital payment adoption: 84% of retail transactions in major markets
-Average fraud rate: 0.5% (50 fraudulent transactions per 10,000)
+- Global payment orchestration market: $1.41B (projected $14.29B by 2037 at 19.5% CAGR)
+- Stripe's total payment volume: $1.4T in 2024
+- Digital payment adoption: 84% of retail transactions in major markets
+- Average fraud rate: 0.5% (50 fraudulent transactions per 10,000)
 
 <br/>
 
