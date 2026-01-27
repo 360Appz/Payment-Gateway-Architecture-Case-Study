@@ -85,6 +85,8 @@ graph LR
 - Saved payment methods  
 - One-click checkout
 
+<br/>
+
 ## Intelligent Router
 
 ### Routing Strategies
