@@ -121,6 +121,8 @@ graph LR
 
 <br/>
 
+<pre>
+    
 IF (transaction.amount > 1000 && transaction.currency == "EUR") 
    THEN route_to("Adyen")
 ELSE IF (transaction.country == "US" && card.type == "AMEX")
@@ -130,6 +132,7 @@ ELSE IF (fraud_score > 0.7)
 ELSE
    route_to_cheapest_with_success_rate(min_rate=0.95)
 
+</pre>
 <br/>
 
 ## Token Vault
