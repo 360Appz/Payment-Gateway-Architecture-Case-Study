@@ -1,5 +1,34 @@
 
+## OAuth 2.0 / OpenID Connect
 
+### Grant Types Supported:
+- Client Credentials (Server-to-Server)
+- Authorization Code (User-facing apps)
+- Refresh Token
+
+### Security Features:
+- JWT with RSA-256 signing
+- Token rotation every 15 minutes
+- Refresh tokens valid for 30 days
+- Secure token storage (encrypted at rest)
+
+---
+
+## Multi-Factor Authentication (MFA)
+
+### Methods:
+- TOTP (Time-based One-Time Password)
+- SMS/Email OTP
+- Push notifications (via authenticator apps)
+- Biometric (for mobile SDKs)
+
+### MFA Triggers:
+- First-time login
+- High-value transactions (>$1,000)
+- Suspicious activity detection
+- Admin operations
+
+---
 
 ```mermaid
 sequenceDiagram
