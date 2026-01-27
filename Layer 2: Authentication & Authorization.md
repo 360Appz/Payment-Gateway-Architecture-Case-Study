@@ -12,7 +12,7 @@
 - Refresh tokens valid for 30 days
 - Secure token storage (encrypted at rest)
 
----
+<br/>
 
 ## Multi-Factor Authentication (MFA)
 
