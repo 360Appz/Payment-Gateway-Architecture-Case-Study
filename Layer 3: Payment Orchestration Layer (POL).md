@@ -2,26 +2,26 @@
 
 ```mermaid
 graph LR
-    subgraph "Checkout Service"
+    subgraph CS ["Checkout Service"]
         FORM[Payment Form]
         VALIDATION[Input Validation]
         DEVICE_FP[Device Fingerprinting]
     end
 
-    subgraph "Payment Orchestrator Core"
+    subgraph POC ["Payment Orchestrator Core"]
         RULE_ENGINE[Rules Engine]
         ROUTING_ALGO[Routing Algorithm]
         RETRY_LOGIC[Retry Logic]
         FAILOVER[Failover Manager]
     end
 
-    subgraph "Tokenization"
+    subgraph TOK ["Tokenization"]
         TOKENIZER[Token Generator]
         DETOKENIZER[De-tokenizer]
         VAULT_MGR[Vault Manager]
     end
 
-    subgraph "PSP Connectors"
+    subgraph PSP ["PSP Connectors"]
         STRIPE_CONN[Stripe Connector]
         ADYEN_CONN[Adyen Connector]
         CHECKOUT_CONN[Checkout Connector]
@@ -43,8 +43,8 @@ graph LR
     FAILOVER --> CHECKOUT_CONN
     FAILOVER --> REGIONAL_CONN
 
-    style "Payment Orchestrator Core" fill:#e1f5ff
-    style "Tokenization" fill:#fff4e1
+    style POC fill:#e1f5ff
+    style TOK fill:#fff4e1
 
 
 ```
