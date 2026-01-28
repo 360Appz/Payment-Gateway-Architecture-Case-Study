@@ -9,7 +9,6 @@
 
 <br/>
 
----
 
 ```mermaid
 graph TB
@@ -125,3 +124,22 @@ graph TB
     style DATA_ANALYTICS fill:#e1ffe1
 
 ```
+<br/>
+## Appendix
+
+### Glossary
+
+-3DS (3D Secure) - Authentication protocol for online card transactions
+-ACH (Automated Clearing House) - US bank transfer network
+-Acquirer - Bank that processes card payments for merchants
+-AML (Anti-Money Laundering) - Financial crime prevention
+-Authorization - Approval of a payment transaction
+-Chargeback - Disputed transaction reversal
+-Clearing - Process of reconciling authorized transactions
+-Issuer - Bank that issued the payment card
+-KYC (Know Your Customer) - Identity verification
+-PAN (Primary Account Number) - Full card number
+-PCI DSS - Payment Card Industry Data Security Standard
+-PSP (Payment Service Provider) - Third-party payment processor
+-Settlement - Transfer of funds from issuer to merchant
+-Tokenization - Replacing sensitive data with non-sensitive tokens
