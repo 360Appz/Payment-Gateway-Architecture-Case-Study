@@ -28,7 +28,7 @@
 - Suspicious activity detection
 - Admin operations
 
----
+<br/>
 
 ```mermaid
 sequenceDiagram
