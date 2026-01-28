@@ -80,27 +80,27 @@ sequenceDiagram
 
 ```mermaid
 graph TB
-    subgraph "Data Ingestion"
+    subgraph DATA_INGEST [Data Ingestion]
         TXN_EVENT[Transaction Event]
         ENRICH[Data Enrichment]
         FEATURE_SVC[Feature Service]
     end
 
-    subgraph "Fraud Detection Pipeline"
+    subgraph FRAUD_PIPE [Fraud Detection Pipeline]
         RULES[Rules Engine]
         ML_MODEL[ML Models]
         RISK_SCORE[Risk Scoring]
         DECISION[Decision Engine]
     end
 
-    subgraph "Actions"
+    subgraph ACTIONS [Actions]
         APPROVE[Auto-Approve]
         CHALLENGE[3DS Challenge]
         BLOCK[Block Transaction]
         MANUAL[Manual Review Queue]
     end
 
-    subgraph "Feedback Loop"
+    subgraph FEEDBACK [Feedback Loop]
         CHARGEBACK_DATA[Chargeback Data]
         MODEL_TRAINING[Model Retraining]
     end
@@ -122,7 +122,7 @@ graph TB
     CHARGEBACK_DATA --> MODEL_TRAINING
     MODEL_TRAINING -.Update.-> ML_MODEL
 
-    style "Fraud Detection Pipeline" fill:#ffcccc
+    style FRAUD_PIPE fill:#ffcccc
 
 ```
 
