@@ -1,5 +1,7 @@
 # Layer 1: Client & Edge Layer
 
+<br/>
+
 ## Client Applications
 
 **Supported Channels:**
@@ -9,7 +11,7 @@
 - **Point of Sale (POS)** terminals
 - **Server-to-Server** API integrations
 
----
+<br/>
 
 ## CDN & Edge Network
 
@@ -22,7 +24,7 @@
 - Static asset caching
 - DDoS mitigation (Layer 3 / 4 / 7)
 
----
+<br/>
 
 ## Web Application Firewall (WAF)
 
@@ -34,7 +36,7 @@
 - Bot detection & mitigation
 - Rate limiting per IP / user
 
----
+<br/>
 
 ## API Gateway
 
