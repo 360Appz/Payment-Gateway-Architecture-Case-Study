@@ -14,6 +14,7 @@
 - Hourly batching for standard transactions
 - End-of-day batch for low-value
 
+<br/>
 
 ## Settlement Engine
 ### Settlement Flow
@@ -59,6 +60,7 @@ graph LR
 - Deduct fees (interchange, assessment, processing)
 - Transfer net amount to merchant account
 
+<br/>
 
 ## Reconciliation Service
 
@@ -119,6 +121,11 @@ graph TB
 - Fee calculation errors
 - Duplicate settlements
 - Chargebacks not recorded
+
+<br/>
+
+## Chargeback Management
+### Chargeback Flow
 
 ```mermaid
 sequenceDiagram
