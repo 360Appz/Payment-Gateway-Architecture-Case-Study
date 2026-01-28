@@ -138,7 +138,7 @@ graph TB
 * [Layer 7: Data & Analytics](https://github.com/360Appz/Payment-Gateway-Architecture-Case-Study/blob/main/Layer%207%3A%20Data%20%26%20Analytics.md)
 * [Layer 8: Data Storage Layer](https://github.com/360Appz/Payment-Gateway-Architecture-Case-Study/blob/main/Layer%208%3A%20Data%20Storage%20Layer.md)
 * [Layer 9: Observability & Monitoring](https://github.com/360Appz/Payment-Gateway-Architecture-Case-Study/blob/main/Layer%209%3A%20%20Observability%20%26%20Monitoring.md)
-* [Layer 10: Observability & Monitoring](https://github.com/360Appz/Payment-Gateway-Architecture-Case-Study/blob/main/Layer%2010%3A%20Observability%20%26%20Monitoring.md)
+* [Layer 10: Disaster Recovery & Business Continuity](https://github.com/360Appz/Payment-Gateway-Architecture-Case-Study/blob/main/Layer%2010%3A%20Disaster%20Recovery%20%26%20Business%20Continuity.md)
 
 
 <br/>
