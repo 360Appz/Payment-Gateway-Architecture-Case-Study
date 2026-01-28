@@ -11,7 +11,7 @@
 graph TB
     ORCHESTRATOR[Payment Orchestrator]
     
-    subgraph "PSP Abstraction Layer"
+    subgraph PSP_LAYER [PSP Abstraction Layer]
         ADAPTER_PATTERN[Adapter Pattern]
         STRIPE_ADAPTER[Stripe Adapter]
         ADYEN_ADAPTER[Adyen Adapter]
@@ -19,7 +19,7 @@ graph TB
         REGIONAL_ADAPTER[Regional Adapters]
     end
     
-    subgraph "External PSPs"
+    subgraph EXTERNAL_PSPS [External PSPs]
         STRIPE[Stripe API]
         ADYEN[Adyen API]
         CHECKOUT[Checkout.com API]
@@ -39,7 +39,7 @@ graph TB
     REGIONAL_ADAPTER --> UPI
     REGIONAL_ADAPTER --> ALIPAY
 
-    style "PSP Abstraction Layer" fill:#e1ffe1
+    style PSP_LAYER fill:#e1ffe1
 
 ```
 <br/>
@@ -51,7 +51,6 @@ graph TB
 - A/B testing of PSPs  
 - Graceful degradation  
 
----
 
 ## Supported Payment Methods
 
