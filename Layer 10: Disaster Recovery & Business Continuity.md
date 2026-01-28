@@ -1,3 +1,7 @@
+## Multi-Region Architecture
+
+### Active-Active Configuration
+
 ```mermaid
 graph TB
     subgraph SG1 ["Region: US-East-1 (Primary)"]
