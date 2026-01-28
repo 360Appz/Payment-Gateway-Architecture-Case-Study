@@ -1,6 +1,4 @@
 
-# API Documentation
-
 ## RESTful API Endpoints
 
 **Base URL:**  
