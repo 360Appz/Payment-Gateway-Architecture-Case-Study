@@ -74,6 +74,8 @@ sequenceDiagram
 - **TIMEOUT** – No response from issuer  
 - **ERROR** – System error  
 
+<br/>
+
 ## Fraud Detection Engine
 
 **Architecture:** Real-time streaming fraud detection using event-driven microservices
@@ -126,8 +128,6 @@ graph TB
 
 ```
 
-
-```
 
 ---
 
