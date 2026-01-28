@@ -56,7 +56,6 @@ sequenceDiagram
 - Partial authorizations  
 - Incremental authorizations  
 
----
 
 ### Performance Targets:
 
@@ -65,7 +64,6 @@ sequenceDiagram
 - **Timeout:** 30 seconds  
 - **Retry attempts:** 3 (with exponential backoff)  
 
----
 
 ### Authorization States:
 
@@ -79,10 +77,54 @@ sequenceDiagram
 ## Fraud Detection Engine
 
 **Architecture:** Real-time streaming fraud detection using event-driven microservices
+
 ```mermaid
+graph TB
+    subgraph "Data Ingestion"
+        TXN_EVENT[Transaction Event]
+        ENRICH[Data Enrichment]
+        FEATURE_SVC[Feature Service]
+    end
 
+    subgraph "Fraud Detection Pipeline"
+        RULES[Rules Engine]
+        ML_MODEL[ML Models]
+        RISK_SCORE[Risk Scoring]
+        DECISION[Decision Engine]
+    end
 
+    subgraph "Actions"
+        APPROVE[Auto-Approve]
+        CHALLENGE[3DS Challenge]
+        BLOCK[Block Transaction]
+        MANUAL[Manual Review Queue]
+    end
 
+    subgraph "Feedback Loop"
+        CHARGEBACK_DATA[Chargeback Data]
+        MODEL_TRAINING[Model Retraining]
+    end
+
+    TXN_EVENT --> ENRICH
+    ENRICH --> FEATURE_SVC
+    FEATURE_SVC --> RULES
+    FEATURE_SVC --> ML_MODEL
+    
+    RULES --> RISK_SCORE
+    ML_MODEL --> RISK_SCORE
+    RISK_SCORE --> DECISION
+    
+    DECISION -->|Score < 0.3| APPROVE
+    DECISION -->|0.3 - 0.7| CHALLENGE
+    DECISION -->|0.7 - 0.9| MANUAL
+    DECISION -->|> 0.9| BLOCK
+    
+    CHARGEBACK_DATA --> MODEL_TRAINING
+    MODEL_TRAINING -.Update.-> ML_MODEL
+
+    style "Fraud Detection Pipeline" fill:#ffcccc
+
+```
 
 
 ```
@@ -99,7 +141,6 @@ sequenceDiagram
 - Amount anomaly (unusual transaction amounts)  
 - Merchant category (high-risk MCCs)  
 
----
 
 ### Rules Engine Examples:
 
@@ -108,7 +149,6 @@ sequenceDiagram
 - **Amount Rule:** First transaction >$500 = MANUAL REVIEW  
 - **Device Rule:** New device + high amount = CHALLENGE  
 
----
 
 ### ML Models:
 
@@ -117,7 +157,6 @@ sequenceDiagram
 - **Anomaly Detection** – Isolation Forest for outliers  
 - **Graph Analytics** – Network fraud detection (ring detection)  
 
----
 
 ### Performance:
 
@@ -126,20 +165,17 @@ sequenceDiagram
 - **Fraud catch rate:** >95%  
 - **Model retraining:** Weekly  
 
----
 
 ## 3D Secure 2.0 Service
 
 **Protocol:** EMVCo 3DS 2.0 / SCA (Strong Customer Authentication)
 
----
 
 ### Flow Types:
 
 - **Frictionless (Low-risk, no user challenge)** – 85% of transactions  
 - **Challenge (User authenticates via OTP/biometric)** – 15% of transactions  
 
----
 
 ### Risk-Based Authentication (RBA):
 
@@ -147,7 +183,6 @@ sequenceDiagram
 - Exemptions: Low-value (<€30), trusted beneficiaries  
 - Issuer decides challenge requirement  
 
----
 
 ### Benefits:
 
