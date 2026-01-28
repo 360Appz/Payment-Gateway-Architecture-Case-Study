@@ -127,9 +127,7 @@ graph TB
     style FRAUD_PIPE fill:#ffcccc
 
 ```
-
-
----
+<br/>
 
 ### Detection Features:
 
@@ -164,6 +162,8 @@ graph TB
 - **False positive rate:** <5%  
 - **Fraud catch rate:** >95%  
 - **Model retraining:** Weekly  
+
+<br/>
 
 
 ## 3D Secure 2.0 Service
