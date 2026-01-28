@@ -1,4 +1,4 @@
-```md
+
 ## Data Storage Layer
 
 ### Database Architecture
@@ -66,7 +66,7 @@ graph TB
 - Cross-region backup replication
 - Retention: 30 days
 
----
+<br/>
 
 ### Redis Cache
 
@@ -87,7 +87,6 @@ graph TB
 - **Eviction Policy:** LRU (Least Recently Used)
 - **Persistence:** RDB snapshots + AOF (Append-Only File)
 
----
 
 ### Data Retention
 
@@ -100,7 +99,7 @@ graph TB
 | Audit logs          | 10 years                          | S3 Glacier                 |
 | Session data        | 24 hours                          | Redis                      |
 
----
+<br/>
 
 ## Security & Compliance
 
@@ -143,7 +142,7 @@ graph TB
 - Hosted checkout pages (PCI Level 1 compliant)
 - Network segmentation isolates CDE
 
----
+<br/>
 
 ### Encryption Standards
 
@@ -162,7 +161,7 @@ graph TB
 - Key rotation every 90 days
 - Separate keys per environment (dev, staging, prod)
 
----
+<br/>
 
 ## Regulatory Compliance
 
@@ -189,4 +188,4 @@ graph TB
 - CCPA (California Consumer Privacy Act)
 - KYC/AML (Know Your Customer / Anti-Money Laundering)
 - OFAC (Office of Foreign Assets Control) sanctions screening
-```
+
