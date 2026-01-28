@@ -51,6 +51,7 @@ graph TB
 - A/B testing of PSPs  
 - Graceful degradation  
 
+<br/>
 
 ## Supported Payment Methods
 
